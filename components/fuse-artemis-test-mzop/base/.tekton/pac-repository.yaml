@@ -1,0 +1,15 @@
+apiVersion: pipelinesascode.tekton.dev/v1alpha1
+kind: Repository
+metadata:
+  annotations:
+    appstudio.openshift.io/application: artemis
+    appstudio.openshift.io/component: fuse-artemis-test-mzop
+    build.appstudio.openshift.io/build: "true"
+    build.appstudio.openshift.io/type: build
+    build.appstudio.openshift.io/version: "0.1"
+    pipelines.appstudio.openshift.io/type: build
+  creationTimestamp: null
+  name: fuse-artemis-test-mzop
+  namespace: burrzinga-tenant
+spec:
+  url: https://github.com/bszeti/fuse-artemis-test
