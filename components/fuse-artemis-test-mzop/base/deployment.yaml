@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: fuse-artemis-test-mzop
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:gTo1P-fuse-artemis-test-mzop
+      - image: quay.io/redhat-appstudio/user-workload@sha256:3ace7db8e6208e923f6c130ce4f4cbf04035befc248c2051bdb4f3020e294ce1
         name: my-java-springboot
         ports:
         - containerPort: 8081
