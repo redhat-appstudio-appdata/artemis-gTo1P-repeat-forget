@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: fuse-artemis-test-mzop
+  namespace: burrzinga-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:3ace7db8e6208e923f6c130ce4f4cbf04035befc248c2051bdb4f3020e294ce1
+        name: my-java-springboot
+        resources: {}
+status: {}
